@@ -109,11 +109,11 @@ run_command(){
         local EXAMPLE_BIN=$APP_HOME/bin
         local CONTAINER_BIN=$CONTAINER_APP_HOME/bin
 
-        [ -x $EXAMPLE_BIN/$EXAMPLE ] || echo "Building $EXAMPLE"
-        if ! [ -x $EXAMPLE_BIN/$EXAMPLE ]; then
+        [ -e $EXAMPLE_BIN/$EXAMPLE ] || echo "Building $EXAMPLE"
+        if ! [ -e $EXAMPLE_BIN/$EXAMPLE ]; then
             docker_run "--rm -a STDOUT -a STDIN -a STDERR" "/bin/sh -c" "cd $CONTAINER_APP_HOME && make clean build"
         fi
-        if [ -x $EXAMPLE_BIN/$EXAMPLE ]; then
+        if [ -e $EXAMPLE_BIN/$EXAMPLE ]; then
             local ARGS=$@
             docker_run "--rm -it -a STDOUT -a STDIN -a STDERR -P" "/bin/sh -c" "$CONTAINER_BIN/$EXAMPLE $ARGS"
         else

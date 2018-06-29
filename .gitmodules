@@ -1,0 +1,3 @@
+[submodule "modules/docker-qpid-proton"]
+	path = modules/docker-qpid-proton
+	url = git@github.com:SolaceLabs/docker-qpid-proton.git

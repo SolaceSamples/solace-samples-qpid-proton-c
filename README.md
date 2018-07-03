@@ -29,7 +29,7 @@ This repository contains sample code for the following scenarios:
 
 ## Prerequisites
 
-There are two environments for the 
+There are two environments for the Samples.
 
 ### Docker Environment Prerequisites
 
@@ -42,7 +42,7 @@ Must have the Apache Qpid Proton C library  version 0.23 or later.
 Must have make, and gcc tools available to use makefile.
 
 ##### Building Apache Qpid Proton locally
-Check out the [images folder](modules/docker-qpid-proton/images) in the [docker-qpid-proton project](modules/docker-qpid-proton) for how the docker container built the Apache qpid Proton environment. For building on platforms not supported by the docker-qpid-proton project check out the [Apache Qpid Proton project](https://github.com/apache/qpid-proton).
+Check out the [images folder](https://github.com/SolaceLabs/docker-qpid-proton/tree/master/images) in the [docker-qpid-proton project](https://github.com/SolaceLabs/docker-qpid-proton) for how the docker container built the Apache qpid Proton environment. For building on platforms not supported by the docker-qpid-proton project check out the [Apache Qpid Proton project](https://github.com/apache/qpid-proton).
 
 ## Building & Running with Docker
 

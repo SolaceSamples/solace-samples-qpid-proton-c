@@ -10,11 +10,12 @@ In addition to information provided on the Solace [Developer Portal](http://dev.
  - https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=amqp
  - http://docs.oasis-open.org/amqp/core/v1.0/amqp-core-complete-v1.0.pdf
 
-The "Getting Started" Samples will get you up to speed and sending messages with Solace technology as quickly as possible. There are three ways you can get started:
+The "Getting Started" Samples will get you up to speed and sending messages with Solace technology as quickly as possible. There are four ways you can get started:
 
 - Follow [these instructions](https://cloud.solace.com/create-messaging-service/) to quickly spin up a cloud-based Solace messaging service for your applications.
 - Follow [these instructions](https://docs.solace.com/Solace-VMR-Set-Up/Setting-Up-VMRs.htm) to start the Solace PubSub+ software message broker in leading Clouds, Container Platforms or Hypervisors. The tutorials outline where to download and how to install the Solace PubSub+ software message broker.
 - If your company has Solace PubSub+ appliances deployed, contact your middleware team to obtain the host name or IP address of a Solace PubSub+ appliance to test against, a username and password to access it, and a VPN in which you can produce and consume messages.
+- Pull the *solace-pubsub-standard* docker image from [Docker Hub repository](https://hub.docker.com/r/solace/solace-pubsub-standard/).
 
 ## Contents
 This repository contains sample code for the following scenarios:
